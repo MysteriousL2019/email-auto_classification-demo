@@ -1,5 +1,6 @@
 # mini-sms-classify
 > Spam email classification (Naive Bayes algorithm) using Flask + Vue
+* [basic function show](https://github.com/MysteriousL2019/email-auto_classification-demo/issues/1#issue-1939350127)
 
 ### Background
 * In 2002, Paul Graham proposed using "Bayesian inference" to filter spam emails. He claimed that the results were incredibly effective. It could filter out 995 out of 1000 spam emails with no false positives.
