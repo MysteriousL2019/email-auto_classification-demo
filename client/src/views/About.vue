@@ -30,11 +30,12 @@
  
     <p2>
     <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
-      作者：李方正 学号：2019213710 班级：2019215122
+      <!-- 作者：李方正 学号：2019213710 班级：2019215122 -->
+      Author: MysteriousLi
       </p2>
       <br>
        <p2> 
-         <a href="mailto:lfz@bupt.edu.cn"  strong style= "font:italic 1em Georgia, serif;"> 邮箱：lfz@bupt.edu.cn</a>
+         <a href="mailto:e1127338@u.nus.edu"  strong style= "font:italic 1em Georgia, serif;"> email: e1127338@u.nus.edu</a>
         </p2>
         
          <a-collapse v-model: >
@@ -106,7 +107,10 @@
   
   methods: {
     predict() {
-      const path = 'http://localhost:5000/lookUp?email='+this.email;
+      
+      const path = 'http://127.0.0.1:5000/lookUp?email='+this.email;
+
+      // const path = 'http://localhost:5000/lookUp?email='+this.email;
       console.log(this.email)//测试用的
       axios.post(path)
         .then((res) => {
