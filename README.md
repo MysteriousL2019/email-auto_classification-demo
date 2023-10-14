@@ -11,7 +11,11 @@
 * $\ P(S|W)=\frac{P(W|S)*P(S)}{P(W|S)*P(S)+P(W|H)*P(H)}$
 * In this equation, W represents a certain word, and we need to calculate the value of P(S|W), which is the probability of spam (S) given that a certain word (W) already exists.
 * The denominator is the full probability formula of P(W), which means: the probability of a certain word (W) appearing in spam emails, plus the probability of it appearing in normal emails.
-
+### Why Bayes
+* Although LightGBM and other bagging method(random forest and GBDT) can be efficient methods, especially for large scale of data and high dimension of data. But they need: 
+    * more feature engineering: need specific knowledge and data preprocessing 
+    * compute complex: bagging need more time to train and inference 
+    * hyperparameter: many hyperparameter needs to be adjusted. 
 ## Naive Bayes Classification
 ## How to Run
 ### Server Side
